@@ -1,3 +1,9 @@
+# Вёрстка макета OathJar Invitation
+
+Учебный макет свёрстан во время бесплатного интенсива школы [Webcademy.ru](webcademy.ru)
+
+Ссылка на вёрстку [https://serrjik.github.io/OathJar-Invitation/](https://serrjik.github.io/OathJar-Invitation/)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Serrjik/OathJar-Invitation/edit/master/docs/README.md) to maintain and preview the content for your website in Markdown files.
