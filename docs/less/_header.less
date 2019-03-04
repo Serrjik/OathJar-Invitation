@@ -1,9 +1,13 @@
 .header {
 	width: 100%;
-	height: 1195px;
 	padding-top: 92px;
-	background-image: linear-gradient(to top, #ffffff 0%, #fff9df 100%);
-	// background-color: #f60;
+	padding-bottom: 410px;
+	background-image: 
+		url(../img/illustrations/illustration-header.png),
+		linear-gradient(to top, #ffffff 0%, #fff9df 100%);
+	background-repeat: no-repeat;
+	background-position: center bottom, top left;
+	background-size: 100% auto;
 }
 
 .logo-wrapper {
@@ -63,21 +67,122 @@
 }
 
 .header-names {
-	display: block;
-	width: 800px;
-	height: 400px;
-	border: 5px solid green;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 60px;
+	justify-content: center;
+}
+
+.header-names * {
 }
 
 .header-names-left {
-
+	text-align: right;
 }
 
 .header-names-button {
-
+	position: relative;
+	width: 91px;
+	height: 91px;
+	margin-left: 37px;
+	margin-right: 37px;
+	background-color: #ed543a;
+	border-radius: 60px;
+	background-image: url("../img/icons/icon-heart.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	
+	&:after {
+		position: absolute;
+		bottom: 15px;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		content: '+';
+		display: block;
+		width: 37px;
+		height: 37px;
+		background-color: #ffcc36;
+		border-radius: 20px;
+		color: #ffffff;
+		font-size: 30px;
+		font-weight: 300;
+		line-height: 37px;
+		text-align: center;
+	}
 }
 
 .header-names-right {
+	text-align: left;
+}
 
+.header-names__name {
+	color: #eb5238;
+	font-size: 22px;
+	font-weight: 700;
+	line-height: 40px;
+}
+
+.header-names__email {
+	color: #0d3e60;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 36px;
+}
+
+.scroll__desc {
+	color: #0d3e60;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 24.06px;
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.scroll-bg {
+	position: relative;
+	max-width: 750px;
+	height: 122px;
+	background-color: #fff9df;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&:before {
+		position: absolute;
+		left: -23px;
+		top: -28px;
+		display: block;
+		content: "";
+		width: 57px;
+		height: 174px;
+		background-image: url("../img/header/left-scroll.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	&:after {
+		position: absolute;
+		right: -23px;
+		top: -28px;
+		display: block;
+		content: "";
+		width: 57px;
+		height: 174px;
+		background-image: url("../img/header/right-scroll.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
+
+.scroll__title {
+	color: #8d8b80;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 24.06px;
 }
 
