@@ -1,60 +1,66 @@
 /* line 1, _header.less */
 .header {
+  position: relative;
   width: 100%;
   padding-top: 92px;
   padding-bottom: 410px;
   background-image: url(../img/illustrations/illustration-header.png), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#fff9df));
+  background-image: url(../img/illustrations/illustration-header.png), -webkit-linear-gradient(bottom, #ffffff 0%, #fff9df 100%);
+  background-image: url(../img/illustrations/illustration-header.png), -o-linear-gradient(bottom, #ffffff 0%, #fff9df 100%);
   background-image: url(../img/illustrations/illustration-header.png), linear-gradient(to top, #ffffff 0%, #fff9df 100%);
   background-repeat: no-repeat;
   background-position: center bottom, top left;
   background-size: 100% auto;
 }
-/* line 13, _header.less */
+/* line 14, _header.less */
 .logo-wrapper {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: end;
+  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 23px;
 }
-/* line 20, _header.less */
+/* line 21, _header.less */
 .promises-counter {
   color: #0d3e60;
 }
-/* line 24, _header.less */
+/* line 25, _header.less */
 .promises-counter__icon {
   margin-bottom: 8px;
 }
-/* line 28, _header.less */
+/* line 29, _header.less */
 .promises-counter__number {
   font-size: 20px;
   font-weight: 700;
   line-height: 1;
   margin-bottom: 4px;
 }
-/* line 35, _header.less */
+/* line 36, _header.less */
 .promises-counter__desc {
   font-size: 16px;
   font-weight: 300;
   line-height: 1;
 }
-/* line 41, _header.less */
+/* line 42, _header.less */
 .header-content {
   max-width: 650px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
-/* line 48, _header.less */
+/* line 49, _header.less */
 .header__icon-mail {
   margin-bottom: 30px;
 }
-/* line 52, _header.less */
+/* line 53, _header.less */
 .header__invite {
   color: #eb5238;
   font-size: 20px;
@@ -62,7 +68,7 @@
   line-height: 1;
   margin-bottom: 21px;
 }
-/* line 60, _header.less */
+/* line 61, _header.less */
 .header__title {
   height: 82px;
   color: #0d3e60;
@@ -71,23 +77,25 @@
   line-height: 1;
   margin-bottom: 36px;
 }
-/* line 69, _header.less */
+/* line 70, _header.less */
 .header-names {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
-/* line 80, _header.less */
+/* line 81, _header.less */
 .header-names-left {
   text-align: right;
 }
-/* line 84, _header.less */
+/* line 85, _header.less */
 .header-names-button {
   position: relative;
   width: 91px;
@@ -100,12 +108,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 96, _header.less */
+/* line 97, _header.less */
 .header-names-button:after {
   position: absolute;
   bottom: 15px;
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
+      -ms-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
   content: '+';
   display: block;
@@ -119,25 +128,25 @@
   line-height: 37px;
   text-align: center;
 }
-/* line 115, _header.less */
+/* line 116, _header.less */
 .header-names-right {
   text-align: left;
 }
-/* line 119, _header.less */
+/* line 120, _header.less */
 .header-names__name {
   color: #eb5238;
   font-size: 22px;
   font-weight: 700;
   line-height: 40px;
 }
-/* line 126, _header.less */
+/* line 127, _header.less */
 .header-names__email {
   color: #0d3e60;
   font-size: 16px;
   font-weight: 700;
   line-height: 36px;
 }
-/* line 133, _header.less */
+/* line 134, _header.less */
 .scroll__desc {
   color: #0d3e60;
   font-size: 16px;
@@ -146,7 +155,7 @@
   text-align: center;
   margin-bottom: 16px;
 }
-/* line 142, _header.less */
+/* line 143, _header.less */
 .scroll-bg {
   position: relative;
   max-width: 750px;
@@ -157,16 +166,19 @@
   margin-right: auto;
   padding: 0 50px;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
-/* line 155, _header.less */
+/* line 156, _header.less */
 .scroll-bg:before {
   position: absolute;
   left: -23px;
@@ -179,7 +191,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 168, _header.less */
+/* line 169, _header.less */
 .scroll-bg:after {
   position: absolute;
   right: -23px;
@@ -192,12 +204,49 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 182, _header.less */
+/* line 183, _header.less */
 .scroll__title {
   color: #8d8b80;
   font-size: 18px;
   font-weight: 500;
   line-height: 24.06px;
+}
+/* line 190, _header.less */
+.link-circle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: block;
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  background-color: rgba(235, 82, 56, 0.2);
+}
+/* line 202, _header.less */
+.link-circle-inner {
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  width: 55px;
+  height: 55px;
+  background-color: #eb5238;
+  border-radius: 50px;
+  z-index: 2;
+  background-image: url("../img/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 1, _further-information.less */
+.further-information-content {
+  width: 555px;
+  margin-left: auto;
+  color: rgba(13, 62, 96, 0.86);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.875;
 }
 /* line 1, _utils.less */
 * {
@@ -215,5 +264,42 @@ body {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
+}
+/* line 18, _utils.less */
+.title-2 {
+  color: #0d3e60;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+/* line 26, _utils.less */
+.checklist {
+  color: #0d3e60;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 36, _utils.less */
+.checklist li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 47px;
+}
+/* line 41, _utils.less */
+.checklist li:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 29px;
+  background-image: url("../img/icons/tickbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */

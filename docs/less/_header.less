@@ -1,4 +1,5 @@
 .header {
+	position: relative;
 	width: 100%;
 	padding-top: 92px;
 	padding-bottom: 410px;
@@ -186,3 +187,28 @@
 	line-height: 24.06px;
 }
 
+.link-circle {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	display: block;
+	width: 81px;
+	height: 81px;
+	border-radius: 50%;
+	background-color: rgba(235, 82, 56, 0.2);
+}
+
+.link-circle-inner {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+	width: 55px;
+	height: 55px;
+	background-color: #eb5238;
+	border-radius: 50px;
+	z-index: 2;
+	background-image: url("../img/icons/arrow-down.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
