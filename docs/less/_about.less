@@ -1,18 +1,44 @@
 .about-cards {
 	width: 488px;
-	height: 200px;
-	background: red;
 }
+
 .about-content {
 	width: 555px;
 	height: 200px;
-	background: yellow;
+	color: #0d3e60;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 36px;
 }
 
+.about-content p {
+	margin-bottom: 36px;
+}
+
+.about__toggle-wrapper {
+	display: flex;
+	margin-bottom: 90px;
+}
+
+a.about__toggle, 
 .about__toggle {
+	height: 46px;
+	border-radius: 20px;
+	background-color: #fff9df;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-right: 20px;
+	color: #2e435e;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 46px;
+	cursor: pointer;
+	transition: 0.2s ease-in;
+	text-decoration: none;
 
+	&:hover {
+		background-color: #ff8f36;
+		color: #fff;
+	}
 }
 
-.title-special {
-	color: #eb5238;
-}

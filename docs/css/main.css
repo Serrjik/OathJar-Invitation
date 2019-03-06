@@ -1,4 +1,18 @@
 /* line 1, _common.less */
+.title-2 {
+  color: #0d3e60;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+/* line 10, _common.less */
+.title-special {
+  color: #eb5238;
+  margin-bottom: 65px;
+}
+/* line 15, _common.less */
 .checklist {
   color: #0d3e60;
   font-size: 16px;
@@ -10,13 +24,13 @@
   padding-top: 15px;
   list-style-type: none;
 }
-/* line 13, _common.less */
+/* line 27, _common.less */
 .checklist li {
   position: relative;
   margin-bottom: 15px;
   padding-left: 47px;
 }
-/* line 18, _common.less */
+/* line 32, _common.less */
 .checklist li:before {
   position: absolute;
   left: 0;
@@ -29,15 +43,13 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 36, _common.less */
+/* line 50, _common.less */
 .input {
   width: 293px;
   height: 51px;
   border-radius: 19px;
   background-color: #fff9df;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#fff9df), to(#fffdf4));
-  background-image: -webkit-linear-gradient(bottom, #fff9df 0%, #fffdf4 100%);
-  background-image: -o-linear-gradient(bottom, #fff9df 0%, #fffdf4 100%);
   background-image: linear-gradient(to top, #fff9df 0%, #fffdf4 100%);
   border: none;
   color: #2e435e;
@@ -49,11 +61,11 @@
   padding-top: 5px;
   margin-right: 25px;
 }
-/* line 53, _common.less */
+/* line 67, _common.less */
 .input:focus {
   outline: none;
 }
-/* line 58, _common.less */
+/* line 72, _common.less */
 ::-webkit-input-placeholder {
   color: #2e435e;
   opacity: 1;
@@ -70,23 +82,22 @@
   color: #2e435e;
   opacity: 1;
 }
-/* line 63, _common.less */
+/* line 77, _common.less */
 .form-label {
   cursor: pointer;
 }
-/* line 67, _common.less */
+/* line 81, _common.less */
 .checkbox {
   display: none;
 }
-/* line 71, _common.less */
+/* line 85, _common.less */
 .checkbox:checked + .checkbox-fake:after {
   width: 11px;
   height: 11px;
   -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
-/* line 77, _common.less */
+/* line 91, _common.less */
 .checkbox-fake {
   position: relative;
   display: inline-block;
@@ -100,7 +111,7 @@
   border-radius: 50%;
   background-color: #ffffff;
 }
-/* line 89, _common.less */
+/* line 103, _common.less */
 .checkbox-fake:after {
   position: absolute;
   content: "";
@@ -112,13 +123,11 @@
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   -webkit-transition: 0.2s ease-in;
-  -o-transition: 0.2s ease-in;
   transition: 0.2s ease-in;
 }
-/* line 104, _common.less */
+/* line 118, _common.less */
 .checkbox-description {
   display: inline-block;
   vertical-align: middle;
@@ -127,13 +136,13 @@
   font-weight: 400;
   line-height: 30px;
 }
-/* line 113, _common.less */
+/* line 127, _common.less */
 .checkbox-description a {
   color: #0d3e60;
   font-weight: 700;
   text-decoration: underline;
 }
-/* line 119, _common.less */
+/* line 133, _common.less */
 .submit {
   width: 216px;
   height: 52px;
@@ -142,8 +151,6 @@
   cursor: pointer;
   background-color: #eb5238;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eb5238), to(#eb6f38));
-  background-image: -webkit-linear-gradient(bottom, #eb5238 0%, #eb6f38 100%);
-  background-image: -o-linear-gradient(bottom, #eb5238 0%, #eb6f38 100%);
   background-image: linear-gradient(to top, #eb5238 0%, #eb6f38 100%);
   color: #ffffff;
   font-size: 14px;
@@ -151,43 +158,38 @@
   line-height: 30px;
   margin-right: 27px;
 }
-/* line 133, _common.less */
+/* line 147, _common.less */
 .submit:hover {
   background-image: -webkit-gradient(linear, left bottom, left top, from(#eb6f38), to(#eb5238));
-  background-image: -webkit-linear-gradient(bottom, #eb6f38 0%, #eb5238 100%);
-  background-image: -o-linear-gradient(bottom, #eb6f38 0%, #eb5238 100%);
   background-image: linear-gradient(to top, #eb6f38 0%, #eb5238 100%);
 }
-/* line 137, _common.less */
+/* line 151, _common.less */
 .submit:focus {
   outline: none;
 }
-/* line 142, _common.less */
+/* line 156, _common.less */
 .form-notice {
   color: #0d3e60;
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
 }
-/* line 149, _common.less */
+/* line 163, _common.less */
 .form-notice a {
   color: #eb5238;
   text-decoration: underline;
   font-weight: 700;
 }
-/* line 155, _common.less */
+/* line 169, _common.less */
 .form-group {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 25px;
@@ -199,8 +201,6 @@
   padding-top: 92px;
   padding-bottom: 410px;
   background-image: url(../img/illustrations/illustration-header.png), -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#fff9df));
-  background-image: url(../img/illustrations/illustration-header.png), -webkit-linear-gradient(bottom, #ffffff 0%, #fff9df 100%);
-  background-image: url(../img/illustrations/illustration-header.png), -o-linear-gradient(bottom, #ffffff 0%, #fff9df 100%);
   background-image: url(../img/illustrations/illustration-header.png), linear-gradient(to top, #ffffff 0%, #fff9df 100%);
   background-repeat: no-repeat;
   background-position: center bottom, top left;
@@ -209,15 +209,12 @@
 /* line 14, _header.less */
 .logo-wrapper {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-align: end;
-  -webkit-align-items: flex-end;
       -ms-flex-align: end;
           align-items: flex-end;
   margin-bottom: 23px;
@@ -274,14 +271,12 @@
 /* line 70, _header.less */
 .header-names {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
@@ -308,7 +303,6 @@
   bottom: 15px;
   left: 50%;
   -webkit-transform: translate(-50%, 100%);
-      -ms-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
   content: '+';
   display: block;
@@ -360,15 +354,12 @@
   margin-right: auto;
   padding: 0 50px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
 }
@@ -411,7 +402,6 @@
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   display: block;
   width: 81px;
@@ -457,18 +447,202 @@
 /* line 1, _about.less */
 .about-cards {
   width: 488px;
-  height: 200px;
-  background: red;
 }
-/* line 6, _about.less */
+/* line 5, _about.less */
 .about-content {
   width: 555px;
   height: 200px;
-  background: yellow;
+  color: #0d3e60;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 36px;
 }
-/* line 16, _about.less */
-.title-special {
-  color: #eb5238;
+/* line 14, _about.less */
+.about-content p {
+  margin-bottom: 36px;
+}
+/* line 18, _about.less */
+.about__toggle-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 90px;
+}
+/* line 23, _about.less */
+a.about__toggle,
+.about__toggle {
+  height: 46px;
+  border-radius: 20px;
+  background-color: #fff9df;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-right: 20px;
+  color: #2e435e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 46px;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+  text-decoration: none;
+}
+/* line 39, _about.less */
+a.about__toggle:hover,
+.about__toggle:hover {
+  background-color: #ff8f36;
+  color: #fff;
+}
+/* line 1, _card.less */
+.card {
+  position: relative;
+  width: 210px;
+  height: 300px;
+  -webkit-box-shadow: 6px 9px 35px rgba(25, 40, 66, 0.1);
+          box-shadow: 6px 9px 35px rgba(25, 40, 66, 0.1);
+  border-radius: 20px;
+  background-color: #ffffff;
+  color: #2e435e;
+  padding: 65px 30px 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 14, _card.less */
+.card:hover {
+  -webkit-box-shadow: 4px 7px 32px rgba(235, 90, 56, 0.52);
+          box-shadow: 4px 7px 32px rgba(235, 90, 56, 0.52);
+  background-color: #eb5238;
+  color: #ffffff;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#eb5238), to(#eb6f38));
+  background-image: linear-gradient(to top, #eb5238 0%, #eb6f38 100%);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 23, _card.less */
+.card:hover .card-circle {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+/* line 27, _card.less */
+.card:hover .card-circle-inner {
+  background-color: #FFF;
+}
+/* line 31, _card.less */
+.card-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background-color: rgba(235, 82, 56, 0.2);
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 44, _card.less */
+.card-circle-inner {
+  position: absolute;
+  left: 7px;
+  top: 7px;
+  display: block;
+  width: 62px;
+  height: 62px;
+  background-color: #eb5238;
+  border-radius: 50px;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 60, _card.less */
+.card:hover .card-circle .svg-path {
+  fill: #0d3e60;
+}
+/* line 64, _card.less */
+.card:hover .icon-read-more {
+  fill: #fff;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 69, _card.less */
+.card-circle .svg-path {
+  fill: #fff;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+}
+/* line 74, _card.less */
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-bottom: 35px;
+}
+/* line 81, _card.less */
+.card__content {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 87, _card.less */
+.card__read-more {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: auto;
+  height: 20px;
+}
+/* line 94, _card.less */
+.card__read-more a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in;
+  text-decoration: none;
+}
+/* line 102, _card.less */
+.card__read-more-text {
+  display: inline-block;
+  opacity: 0;
+  width: 66px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 24px;
+  text-decoration: none;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+/* line 114, _card.less */
+.card:hover .card__read-more-text {
+  opacity: 1;
+}
+/* line 118, _card.less */
+.card:hover .card__read-more a {
+  left: 130px;
+}
+/* line 122, _card.less */
+.icon-read-more {
+  fill: #009;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
 /* line 1, _utils.less */
 * {
@@ -482,28 +656,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 /* line 11, _utils.less */
+p {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+/* line 16, _utils.less */
 .container {
   width: 1140px;
   margin-left: auto;
   margin-right: auto;
 }
-/* line 18, _utils.less */
+/* line 23, _utils.less */
 .justify-between {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-/* line 23, _utils.less */
-.title-2 {
-  color: #0d3e60;
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 24px;
-  margin-bottom: 35px;
 }
 /*# sourceMappingURL=main.css.map */
