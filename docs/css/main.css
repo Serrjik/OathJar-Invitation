@@ -1,3 +1,197 @@
+/* line 1, _common.less */
+.checklist {
+  color: #0d3e60;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 36px;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  padding-top: 15px;
+  list-style-type: none;
+}
+/* line 13, _common.less */
+.checklist li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 47px;
+}
+/* line 18, _common.less */
+.checklist li:before {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  content: "";
+  display: block;
+  width: 32px;
+  height: 29px;
+  background-image: url("../img/icons/tickbox.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 36, _common.less */
+.input {
+  width: 293px;
+  height: 51px;
+  border-radius: 19px;
+  background-color: #fff9df;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#fff9df), to(#fffdf4));
+  background-image: -webkit-linear-gradient(bottom, #fff9df 0%, #fffdf4 100%);
+  background-image: -o-linear-gradient(bottom, #fff9df 0%, #fffdf4 100%);
+  background-image: linear-gradient(to top, #fff9df 0%, #fffdf4 100%);
+  border: none;
+  color: #2e435e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  padding-right: 26px;
+  padding-left: 26px;
+  padding-top: 5px;
+  margin-right: 25px;
+}
+/* line 53, _common.less */
+.input:focus {
+  outline: none;
+}
+/* line 58, _common.less */
+::-webkit-input-placeholder {
+  color: #2e435e;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #2e435e;
+  opacity: 1;
+}
+::-ms-input-placeholder {
+  color: #2e435e;
+  opacity: 1;
+}
+::placeholder {
+  color: #2e435e;
+  opacity: 1;
+}
+/* line 63, _common.less */
+.form-label {
+  cursor: pointer;
+}
+/* line 67, _common.less */
+.checkbox {
+  display: none;
+}
+/* line 71, _common.less */
+.checkbox:checked + .checkbox-fake:after {
+  width: 11px;
+  height: 11px;
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+/* line 77, _common.less */
+.checkbox-fake {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  -webkit-box-shadow: 2px 2px 0 rgba(14, 15, 33, 0.07);
+          box-shadow: 2px 2px 0 rgba(14, 15, 33, 0.07);
+  border: 1px solid rgba(194, 194, 194, 0.4);
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+/* line 89, _common.less */
+.checkbox-fake:after {
+  position: absolute;
+  content: "";
+  border-radius: 8px;
+  display: block;
+  width: 0;
+  height: 0;
+  background: #eb5238;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+/* line 104, _common.less */
+.checkbox-description {
+  display: inline-block;
+  vertical-align: middle;
+  color: #0d3e60;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+}
+/* line 113, _common.less */
+.checkbox-description a {
+  color: #0d3e60;
+  font-weight: 700;
+  text-decoration: underline;
+}
+/* line 119, _common.less */
+.submit {
+  width: 216px;
+  height: 52px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #eb5238;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#eb5238), to(#eb6f38));
+  background-image: -webkit-linear-gradient(bottom, #eb5238 0%, #eb6f38 100%);
+  background-image: -o-linear-gradient(bottom, #eb5238 0%, #eb6f38 100%);
+  background-image: linear-gradient(to top, #eb5238 0%, #eb6f38 100%);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-right: 27px;
+}
+/* line 133, _common.less */
+.submit:hover {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#eb6f38), to(#eb5238));
+  background-image: -webkit-linear-gradient(bottom, #eb6f38 0%, #eb5238 100%);
+  background-image: -o-linear-gradient(bottom, #eb6f38 0%, #eb5238 100%);
+  background-image: linear-gradient(to top, #eb6f38 0%, #eb5238 100%);
+}
+/* line 137, _common.less */
+.submit:focus {
+  outline: none;
+}
+/* line 142, _common.less */
+.form-notice {
+  color: #0d3e60;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+/* line 149, _common.less */
+.form-notice a {
+  color: #eb5238;
+  text-decoration: underline;
+  font-weight: 700;
+}
+/* line 155, _common.less */
+.form-group {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
 /* line 1, _header.less */
 .header {
   position: relative;
@@ -185,7 +379,7 @@
   top: -28px;
   display: block;
   content: "";
-  width: 57px;
+  width: 73px;
   height: 174px;
   background-image: url("../img/header/left-scroll.svg");
   background-repeat: no-repeat;
@@ -198,7 +392,7 @@
   top: -28px;
   display: block;
   content: "";
-  width: 57px;
+  width: 73px;
   height: 174px;
   background-image: url("../img/header/right-scroll.svg");
   background-repeat: no-repeat;
@@ -240,6 +434,14 @@
   background-position: center;
 }
 /* line 1, _further-information.less */
+.further-information-wrapper {
+  background-image: url("../img/illustrations/illustration.png");
+  background-repeat: no-repeat;
+  background-position: left 100px;
+  padding-top: 105px;
+  padding-bottom: 65px;
+}
+/* line 9, _further-information.less */
 .further-information-content {
   width: 555px;
   margin-left: auto;
@@ -247,6 +449,26 @@
   font-size: 16px;
   font-weight: 400;
   line-height: 1.875;
+}
+/* line 18, _further-information.less */
+.further-information-content p {
+  margin-bottom: 25px;
+}
+/* line 1, _about.less */
+.about-cards {
+  width: 488px;
+  height: 200px;
+  background: red;
+}
+/* line 6, _about.less */
+.about-content {
+  width: 555px;
+  height: 200px;
+  background: yellow;
+}
+/* line 16, _about.less */
+.title-special {
+  color: #eb5238;
 }
 /* line 1, _utils.less */
 * {
@@ -266,40 +488,22 @@ body {
   margin-right: auto;
 }
 /* line 18, _utils.less */
+.justify-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+/* line 23, _utils.less */
 .title-2 {
   color: #0d3e60;
   font-size: 30px;
   font-weight: 700;
   line-height: 24px;
   margin-bottom: 35px;
-}
-/* line 26, _utils.less */
-.checklist {
-  color: #0d3e60;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 36px;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-/* line 36, _utils.less */
-.checklist li {
-  position: relative;
-  margin-bottom: 15px;
-  padding-left: 47px;
-}
-/* line 41, _utils.less */
-.checklist li:before {
-  position: absolute;
-  left: 0;
-  top: 8px;
-  content: "";
-  display: block;
-  width: 32px;
-  height: 29px;
-  background-image: url("../img/icons/tickbox.svg");
-  background-repeat: no-repeat;
-  background-position: center;
 }
 /*# sourceMappingURL=main.css.map */
