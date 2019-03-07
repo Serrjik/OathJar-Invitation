@@ -68,6 +68,7 @@
 }
 
 .header-names {
+	position: relative;
 	display: flex;
 	margin-left: auto;
 	margin-right: auto;
@@ -79,15 +80,21 @@
 }
 
 .header-names-left {
+	width: 50%;
+	padding-right: 80px;
+	padding-top: 10px;
 	text-align: right;
 }
 
 .header-names-button {
-	position: relative;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
 	width: 91px;
 	height: 91px;
-	margin-left: 37px;
-	margin-right: 37px;
+	// margin-left: 37px;
+	// margin-right: 37px;
 	background-color: #ed543a;
 	border-radius: 60px;
 	background-image: url("../img/icons/icon-heart.svg");
@@ -114,6 +121,9 @@
 }
 
 .header-names-right {
+	width: 50%;
+	padding-left: 80px;
+	padding-top: 10px;
 	text-align: left;
 }
 
