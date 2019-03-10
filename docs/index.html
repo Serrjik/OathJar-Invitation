@@ -2,20 +2,29 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<title>OathJar Invitation</title>
-	<link rel="stylesheet" href="./css/main.css">
-	<link rel="stylesheet" href="./fonts/poppins/stylesheet.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="fonts/poppins/stylesheet.css">
+
 </head>
 <body>
 	
 	<!-- HEADER -->
-	<!-- Fixed height 1195px -->
 	<header class="header">
 		
 		<div class="container">
+
+			<div class="cloud-1"></div>
+			<div class="cloud-2"></div>
+
 			<!-- Logo-wrapper -->
 			<div class="logo-wrapper">
 				<div class="logo">
+					<div class="tagline">
+						Where promises <strong>are kept</strong>
+					</div>
 					<img src="img/logo.png" alt="Logo" >
 				</div>
 				<div class="promises-counter">
@@ -62,11 +71,11 @@
 					<div class="scroll__title">Hi Janice! Check out this great website</div>
 				</div>
 			</div>
-			
-			<div class="link-circle">
-				<div class="link-circle-inner"></div>
-			</div>
 
+		</div>
+
+		<div class="link-circle">
+			<div class="link-circle-inner"></div>
 		</div>
 
 	</header>
@@ -75,6 +84,11 @@
 	<!-- FURTHER-INFORMATION-WRAPPER -->
 	<div class="further-information-wrapper">
 		<div class="container">
+
+			<div class="further-information-image-mobile">
+				<img src="img/illustrations/illustration.png" alt="">
+			</div>
+
 			<div class="further-information-content">
 				<h2 class="title-2">Further Information</h2>
 
@@ -111,7 +125,7 @@
 
 	<!-- ABOUT-WRAPPER -->
 	<div class="about-wrapper">
-		<div class="container justify-between">
+		<div class="container about-container">
 			<div class="about-cards">
 
 				<!-- cards-1-column -->
@@ -214,22 +228,39 @@
 			</div>
 			<div class="about-content">
 				<div class="about__toggle-wrapper">
-					<a href="#!" class="about__toggle">Why Use OathJar</a>
-					<a href="#!" class="about__toggle">How it Works</a>
-					<a href="#!" class="about__toggle">OathJar is Private</a>
+					<a href="#whyuse" class="about__toggle">Why Use OathJar</a>
+					<a href="#howitworks" class="about__toggle">How it Works</a>
+					<a href="#private" class="about__toggle">OathJar is Private</a>
 				</div>
 
-				<h2 class="title-2 title-special">What is OathJar?</h2>
-				
-				<p>OathJar is a brand new company aimed at providing people in an active relationship with a place of their own to set the rules and guidelines of their relationships</p>
+				<div class="about-content-box-wrapper">
+
+					<div class="about-content__box" id="whyuse">
+						<h2 class="title-2 title-special">Why Use OathJar</h2>
+						<p>OathJar is a brand new company aimed at providing people in an active relationship with a place of their own to set the rules and guidelines of their relationships</p>
+					</div>
+					
+					<div class="about-content__box" id="howitworks">
+						<h2 class="title-2 title-special">How it Works</h2>
+						<p>Our clients and expertise span traditional brick & mortar, web-based, organizations & associations, government, real estate, events/venues, products, and service oriented businesses.</p>
+					</div>
+					
+					<div class="about-content__box" id="private">
+						<h2 class="title-2 title-special">OathJar is Private</h2>
+						<p>Jarge colledlions for a life of our authour, and perhaps in the courfe of his refearches had learned this particular.</p>
+						<p>However this may have been, the other part of his conjeclure (that Shakfpeare was jealous of her) may perhaps be thought to derive fome probability from the following circumstances j at leaf, when conneded with the well known story of the Oxford vintner's wife, they give fome room to fuppofe that he was not very strongly attached to her.</p>
+					</div>
+
+				</div>
+
 			</div>
 		</div>
 	</div>
 	<!-- END - ABOUT-WRAPPER -->
 
 	<!-- FOOTER -->
-	<div class="footer justify-between">
-		<div class="container">
+	<div class="footer">
+		<div class="container footer-container">
 			<div class="footer-copyright">
 				<div class="footer-copyright__logo">
 					<img src="./img/logo.png" alt="Logo" >
@@ -250,6 +281,13 @@
 		</div>
 	</div>
 	<!-- END - FOOTER -->
+
+	<div id="scrollToTop" class="scrollToTop-wrapper">
+		<div class="scrollToTop-icon"></div>
+	</div>
+
+	<script src="libs/jquery/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
 
 </body>
 </html>
