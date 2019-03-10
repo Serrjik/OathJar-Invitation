@@ -1,5 +1,7 @@
 # Вёрстка макета OathJar Invitation
 
+![OathJar Invitation](http://ipic.su/7yE4KS.png)
+
 Учебный макет свёрстан во время бесплатного онлайн стрима школы [Webcademy.ru](https://webcademy.ru)
 
 Ссылка на вёрстку [https://serrjik.github.io/OathJar-Invitation/](https://serrjik.github.io/OathJar-Invitation/)
